@@ -1,0 +1,6 @@
+.basic_info {
+    position: fixed;
+    @media (max-width: $mantine-breakpoint-md) {
+        position: relative;
+    }
+}

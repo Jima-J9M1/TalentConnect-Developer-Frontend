@@ -1,0 +1,25 @@
+.experienceTitle {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.experienceTitle__underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background-color: #2196f3;
+    transform: translateY(50%);
+}
+
+.experienceTitle__underlineBroken {
+    position: absolute;
+    left: 50px;
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+}

@@ -1,0 +1,16 @@
+.linkStyle {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.linkStyle:hover {
+    transition: 0.2s;
+    color: #2195f3;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+}

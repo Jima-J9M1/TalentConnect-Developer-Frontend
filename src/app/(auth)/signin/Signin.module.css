@@ -1,0 +1,102 @@
+.page {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* class="m-dee7bd2f mantine-Grid-inner" */
+
+.logo {
+    /* background-color: rgba(35, 166, 240, 0.12); */
+    height: 100%;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    object-fit: cover;
+}
+
+.logoImgResponsive {
+    display: none;
+}
+
+.input {
+    border: 1px solid #2195f3;
+    background-color: rgba(35, 166, 240, 0.05);
+}
+
+.signin {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.signinForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.loginText {
+    color: #2195f3;
+    font-size: 35px;
+}
+
+.loginParagraph {
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .page {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo {
+        background-color: rgba(35, 166, 240, 0.12);
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoImg {
+        display: none;
+    }
+    .logoImgResponsive {
+        display: block;
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .signin {
+        height: auto;
+        align-items: start;
+    }
+    .signinForm {
+        width: 75%;
+        /* background : red; */
+        /* margin : auto; */
+        height: 100vh;
+    }
+    .loginText {
+        font-size: 25px;
+        text-align: center;
+    }
+    .loginParagraph {
+        text-align: center;
+    }
+}

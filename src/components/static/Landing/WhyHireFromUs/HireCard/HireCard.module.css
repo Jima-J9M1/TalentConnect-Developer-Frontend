@@ -1,0 +1,43 @@
+.hirecard {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    transition: ease all 0.4s;
+    gap: 10px;
+    border-radius: 16px;
+    @mixin hover {
+        background-color: light-dark(
+            var(--mantine-color-blue-1),
+            var(--mantine-color-blue-9)
+        );
+        background-color: #2195f3;
+        transform: scale(1.05);
+        color: white;
+        .icon_container {
+            border: 1px solid white;
+            background-color: #2195f3;
+            color: white;
+        }
+        .title,
+        .description,
+        .icon_container,
+        .icon {
+            color: white;
+        }
+    }
+    .title {
+        color: #2195f3;
+    }
+    .description {
+        line-height: 1.5;
+        color: #334155;
+    }
+    .icon_container {
+        border: 1px solid #2195f3;
+        background-color: white;
+        border-radius: 16px;
+    }
+    .icon {
+        color: #2195f3;
+    }
+}

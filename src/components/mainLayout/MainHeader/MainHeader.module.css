@@ -1,0 +1,20 @@
+.header_links {
+    color: var(--mantine-color-black);
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.header_links:hover {
+    color: var(--mantine-color-blue-5);
+}
+
+.header {
+    background: linear-gradient(
+        89deg,
+        #e9f4fe 7.39%,
+        rgba(233, 244, 254, 0.26) 101.6%
+    );
+    backdrop-filter: blur(16px);
+    margin: 0 auto;
+}

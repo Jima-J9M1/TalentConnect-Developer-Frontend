@@ -1,0 +1,8 @@
+.project_title {
+    color: var(--mantine-color-gray-8);
+    text-underline-offset: 2px;
+}
+
+.project_title:hover {
+    color: var(--mantine-color-blue-8);
+}

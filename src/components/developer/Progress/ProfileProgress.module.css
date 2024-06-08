@@ -1,0 +1,22 @@
+.completed {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--mantine-color-gray-8);
+    transition: all 0.2s ease-in-out;
+}
+
+.incomplete {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--mantine-color-gray-4);
+}
+
+.completed:hover {
+    color: var(--mantine-color-blue-4);
+}
+
+.incomplete:hover {
+    color: var(--mantine-color-blue-4);
+}
