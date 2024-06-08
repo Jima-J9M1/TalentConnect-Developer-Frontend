@@ -1,0 +1,21 @@
+.chevron {
+    scale: 1.5;
+}
+.container{
+    display: flex;
+    align-items: center;
+    @media (min-width: $mantine-breakpoint-md) {
+        align-items: end;
+    }
+}
+.firstScreenContainerMoto {
+    text-align: 'left';
+    @media (max-width: $mantine-breakpoint-md) {
+        text-align: center;
+        font-size: x-large;
+    }
+    @media (max-width: $mantine-breakpoint-sm) {
+        text-align: center;
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,19 @@
+.firstScreenContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstScreenContainerMoto {
+    text-align: 'left';
+    @media (max-width: $mantine-breakpoint-md) {
+        text-align: center;
+    }
+}
+
+.firstScreenContainerText {
+    text-align: 'left';
+    @media (max-width: $mantine-breakpoint-md) {
+        text-align: center;
+    }
+}

@@ -1,0 +1,7 @@
+.resume_title {
+    color: var(--mantine-color-gray-8);
+}
+
+.resume_title:hover {
+    color: var(--mantine-color-blue-8);
+}
