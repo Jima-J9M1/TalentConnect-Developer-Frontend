@@ -23,7 +23,7 @@ const Calendly = ({ form, skipStep, nextStep, show }: any) => {
                     email: form.values.email
                 }}
                 // url="https://calendly.com/contact-eskalate/30min"
-                url="https://calendly.com/brian-a2sv/eskalate"
+                url="https://calendly.com/ibsaabraham663/freelancer-interview?month=2024-06"
                 styles={{
                     width: '100%',
                     height: '100vh',

@@ -39,8 +39,8 @@ const Success = () => {
                             span={12}
                             className={SignupStyle.centerOnMobile}
                         >
-                            Brian Bell, our Head of Business, will be reaching
-                            out to finalize your call scheduling!
+                            Ibsa , our Head of Business, will be reaching out to
+                            finalize your call scheduling!
                         </Grid.Col>
                     </Grid>
                 </Grid.Col>

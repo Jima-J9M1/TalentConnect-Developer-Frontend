@@ -1,7 +1,5 @@
 import { Avatar, Button, Flex, Grid, Image, Stack, Text } from '@mantine/core';
-import { useForm } from '@mantine/form';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import classes from './Landing.module.css';
 
 const Hero = () => {

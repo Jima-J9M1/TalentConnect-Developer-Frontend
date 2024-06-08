@@ -10,7 +10,6 @@ import {
 import { useForm } from '@mantine/form';
 import React from 'react';
 
-import { useGetPaginatedDevelopersQuery } from '@/lib/redux/api/developer/developer';
 import { useGetAllSkillsQuery } from '@/lib/redux/api/developer/skill';
 import style from './TalentCard/talentCard.module.css';
 

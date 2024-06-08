@@ -16,9 +16,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 120px;
+    /* padding-left: 120px;
     padding-right: 120px;
-    gap: 8px;
+    gap: 8px; */
 }
 
 .header {

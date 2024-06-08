@@ -32,11 +32,9 @@ export default function Header() {
     const loginState = useAppSelector((state: any) => state.login);
     const [url, setUrl] = useState<string>('');
     // to be changed later for now lets fetch the developer
-    const {
-        data: developer,
-        isLoading,
-        isError
-    } = useGetDeveloperByIdQuery(loginState?.developerId);
+    const { data: developer, isLoading } = useGetDeveloperByIdQuery(
+        loginState?.developerId
+    );
 
     const { isOwner, isView } = useDeveloper();
 
@@ -184,7 +182,7 @@ export default function Header() {
                     <Skeleton style={{ borderRadius: '30px' }} h={40} w={200} />
                 ) : (
                     <Flex gap={'md'} align={'center'}>
-                        <Button component={Link} href={`../signup/client`}>
+                        <Button component={Link} href={`../hire`}>
                             Hire top talent
                         </Button>
                         <CopyButton value={url}>
