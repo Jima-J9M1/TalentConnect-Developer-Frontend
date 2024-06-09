@@ -13,6 +13,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import classes from './MainHeader.module.css';
+import { talent_logo_light } from '@/lib/constant/image-constant';
 
 export default function MainHeader() {
     const pathname = usePathname();
@@ -46,7 +47,7 @@ export default function MainHeader() {
             >
                 <Link href="/">
                     <Image
-                        src={'images/logos/logo-connect-2.svg'}
+                        src={talent_logo_light}
                         width={132}
                         height={80}
                         alt="logo"

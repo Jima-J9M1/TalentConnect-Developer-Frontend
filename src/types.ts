@@ -1,5 +1,5 @@
 /**
- * @fileoverview Types for Eskalate
+ * @fileoverview
  */
 
 export interface Project {

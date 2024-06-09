@@ -147,7 +147,7 @@ export default function MainFooter() {
                         </Text>
                         <Link
                             className={style.linkStyle}
-                            href={'mailto:contact-eskalate@a2sv.org'}
+                            href={'mailto:contact-talent_connect@a2sv.org'}
                         >
                             <Text>contact-talentConnect@gmail.com</Text>
                         </Link>
