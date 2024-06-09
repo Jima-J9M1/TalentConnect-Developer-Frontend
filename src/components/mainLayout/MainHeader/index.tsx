@@ -7,6 +7,7 @@ import {
     Menu,
     Text
 } from '@mantine/core';
+
 import { IconMenuDeep } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -41,13 +42,15 @@ export default function MainHeader() {
                 justify="space-between"
                 align="center"
                 px={{ base: 15, md: 65, lg: 96 }}
+                className="bg-white flex justify-between items-center"
             >
                 <Link href="/">
                     <Image
-                        src={'images/logos/Logo.svg'}
+                        src={'images/logos/logo-connect-2.svg'}
                         width={132}
-                        height={50}
+                        height={80}
                         alt="logo"
+                        className="scale-150"
                     />
                 </Link>
                 <Group gap={'xl'} visibleFrom="lg">

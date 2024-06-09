@@ -20,6 +20,7 @@ import { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import SignupStyle from './Signup.module.css';
+import Image from 'next/image';
 
 const Page = () => {
     const router = useRouter();
@@ -107,6 +108,13 @@ const Page = () => {
                 handleSignup(values ? values : {})
             )}
         >
+            <Image
+                src={'/images/logos/logo-connect-2.svg'}
+                width={200}
+                height={200}
+                alt="logo connect"
+                className="mx-20"
+            />
             <Text fw={500} className={SignupStyle.signupText}>
                 Apply as a freelancer
             </Text>

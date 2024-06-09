@@ -33,20 +33,17 @@ export default function MainFooter() {
                     <Stack>
                         <Link href={'/'}>
                             <Image
-                                src={'images/logos/Logo.svg'}
+                                src={'images/logos/logo-connect-2.svg'}
                                 width={132}
-                                height={50}
+                                height={100}
                                 alt="logo"
                             />
                         </Link>
-                        <Text w={'250px'}>
-                            Made since 2024 in Ethiopia and USA by the Eskalate
-                            team.
-                        </Text>
+                        <Text w={'250px'}>Made since 2024 in Ethiopia.</Text>
                         <Group>
                             <Link
                                 href={
-                                    'https://www.linkedin.com/company/theeskalate/mycompany/'
+                                    'https://www.linkedin.com/#talent_connect'
                                 }
                                 className={style.icon}
                             >
@@ -57,9 +54,7 @@ export default function MainFooter() {
                             </Link>
 
                             <Link
-                                href={
-                                    'https://www.youtube.com/@a2sv-africatosiliconvalley942'
-                                }
+                                href={'https://www.youtube.com/#talent_connect'}
                                 className={style.icon}
                             >
                                 <FaYoutube
@@ -69,7 +64,7 @@ export default function MainFooter() {
                             </Link>
                             <Link
                                 href={
-                                    'https://www.instagram.com/eskalate24?igsh=MTg1MnVwZ3I3cWU3NQ=='
+                                    'https://www.instagram.com/#talent_connect'
                                 }
                                 className={style.icon}
                             >
@@ -134,7 +129,7 @@ export default function MainFooter() {
                             href={'https://a2sv.org/'}
                             target="_blank"
                         >
-                            <Text>a2sv.org</Text>
+                            <Text>talentConnect.org</Text>
                         </Link>
                     </Stack>
                     <Stack
@@ -148,17 +143,18 @@ export default function MainFooter() {
                         </Text>
 
                         <Text w={'200px'} c={'dark'}>
-                            +16506135180
+                            +251-912-13-13-13
                         </Text>
                         <Link
                             className={style.linkStyle}
                             href={'mailto:contact-eskalate@a2sv.org'}
                         >
-                            <Text>contact-eskalate@a2sv.org</Text>
+                            <Text>contact-talentConnect@gmail.com</Text>
                         </Link>
 
                         <Text w={'200px'} c={'dark'}>
-                            San Francisco Bay Area, Addis Ababa, Ethiopia
+                            Addis Ababa Science and Technology University, Addis
+                            Ababa
                         </Text>
                     </Stack>
                 </Flex>
@@ -173,7 +169,7 @@ export default function MainFooter() {
                     }}
                 >
                     <Text>
-                        &#9400; Copyright Eskalate 2024&#46; All Rights
+                        &#9400; Copyright Talent Connect 2024&#46; All Rights
                         Reserved.
                     </Text>
                 </Stack>

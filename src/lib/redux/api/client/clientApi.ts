@@ -5,8 +5,8 @@ export const clientApi = createApi({
     reducerPath: 'clientApi',
     baseQuery: fetchBaseQuery({
         // baseUrl: 'https://eskalate-backend.onrender.com',
-        baseUrl: 'https://eskalate-backend-ij7jnmwh2q-zf.a.run.app',
-        prepareHeaders: (headers, { getState }) => {
+        baseUrl: 'https://talent-connect.onrender.com',
+        prepareHeaders: (headers) => {
             // const token = (getState() as RootState).login?.accessToken;
 
             // // If we have a token set in state, let's assume that we should be passing it.
@@ -35,7 +35,7 @@ export const clientApi = createApi({
             })
         }),
         getSkills: builder.query({
-            query: (body) => ({
+            query: () => ({
                 url: `/v1/skills/getAll`,
                 method: 'GET'
             })
