@@ -11,6 +11,7 @@ import '@mantine/carousel/styles.css';
 import { Poppins } from 'next/font/google';
 import Script from 'next/script';
 import ReduxProvider from '@/Providers/ReduxProvider';
+import { openGraphImage } from './shared-metadata';
 // import './dotenv/config'
 import NextTopLoader from 'nextjs-toploader';
 
@@ -21,24 +22,23 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
     // SEO Metadata
-    title: 'Hire Top African Tech Talent | Remote Developers - Eskalate',
+    title: 'Hire Top Tech Talent |Developers - Talent Connect',
     description:
-        'Connect with a diverse pool of skilled remote developers from Africa. Eskalate provides access to top talent at competitive rates.',
+        'Transform your projects with skilled software engineers handpicked from Addis Ababa Science and Technology University.',
     keywords: [
-        'African tech talent',
-        'remote developers',
+        'tech talent',
+        'developers',
         'software development',
         'IT outsourcing',
-        'Africa',
         'diversity in tech'
     ],
 
     // Social Sharing Metadata (Open Graph)
     openGraph: {
-        title: 'Eskalate: Hire Top African Tech Talent',
+        ...openGraphImage,
+        title: 'Talent Connect: Hire Top AASTU Tech Talent',
         description:
-            'Build your tech team with skilled & diverse remote developers from Africa. Access top talent at competitive rates.',
-        images: ['https://www.eskalate.io/Logo.svg'] // Replace with actual image URL
+            'Transform your projects with skilled software engineers handpicked from Addis Ababa Science and Technology University.'
     }
 };
 

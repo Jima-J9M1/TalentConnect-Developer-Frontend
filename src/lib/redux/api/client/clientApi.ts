@@ -4,7 +4,6 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const clientApi = createApi({
     reducerPath: 'clientApi',
     baseQuery: fetchBaseQuery({
-        // baseUrl: 'https://eskalate-backend.onrender.com',
         baseUrl: 'https://talent-connect.onrender.com',
         prepareHeaders: (headers) => {
             // const token = (getState() as RootState).login?.accessToken;
