@@ -1,5 +1,5 @@
 import { Accordion, Card, Grid, Image, Stack, Text } from '@mantine/core';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { BiBriefcase } from 'react-icons/bi';
 import { FaChevronDown, FaNetworkWired } from 'react-icons/fa';
 import { LiaChalkboardTeacherSolid } from 'react-icons/lia';

@@ -4,7 +4,7 @@ import type { RootState } from '@/lib/redux/index';
 export const contactApi = createApi({
     reducerPath: 'contactApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'https://eskalate-backend-ij7jnmwh2q-zf.a.run.app',
+        baseUrl: 'https://talent-connect.onrender.com',
         prepareHeaders: (headers, { getState }) => {
             const token = (getState() as RootState).login?.accessToken;
 

@@ -14,6 +14,7 @@ import {
 import { AddClinetInf } from '@/types';
 import { Box, Stepper } from '@mantine/core';
 import { isEmail, isNotEmpty, useForm } from '@mantine/form';
+import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 
@@ -107,6 +108,13 @@ const Page = () => {
     return (
         <Box className={SignupStyle.signupForm}>
             <>
+                <Image
+                    src={'images/logos/logo-connect-2.svg'}
+                    width={200}
+                    height={200}
+                    alt="logo connect"
+                    className="mx-20"
+                />
                 <Stepper
                     styles={{
                         steps: {

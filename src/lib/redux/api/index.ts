@@ -14,9 +14,7 @@ const mutex = new Mutex();
 
 const baseQuery = fetchBaseQuery({
     baseUrl:
-        process.env.NEXT_APP_API_URL ||
-        'https://eskalate-backend-ij7jnmwh2q-zf.a.run.app',
-    // 'https://eskalate-backend.onrender.com',
+        process.env.NEXT_APP_API_URL || 'https://talent-connect.onrender.com',
 
     prepareHeaders: (headers, { getState }) => {
         const token = (getState() as RootState).login?.accessToken;

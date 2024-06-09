@@ -18,6 +18,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { BiCheckCircle } from 'react-icons/bi';
 import SigninStyle from './Signin.module.css';
+import Image from 'next/image';
 
 interface FormValues {
     email: string;
@@ -79,6 +80,13 @@ const Page = () => {
                 handleLogin(values ? values : { email: '', password: '' })
             )}
         >
+            <Image
+                src={'images/logos/logo-connect-2.svg'}
+                width={200}
+                height={200}
+                alt="logo connect"
+                className="mx-20"
+            />
             {isVerified != null &&
                 (isVerified == 'true' ? (
                     <Alert

@@ -51,9 +51,9 @@ const apiWithEducation = baseApi.injectEndpoints({
         }),
         deleteEducation: builder.mutation<Education, string>({
             query: (id) => {
-                console.log('id', id);
+                // console.log('id', id);
                 let val = id.toString();
-                console.log('val', val);
+                // console.log('val', val);
 
                 return {
                     url: `v1/education/deleteEducation/${id}`,

@@ -21,7 +21,7 @@ export default function SignUpLayout({
             >
                 {children}
             </Grid.Col>
-            <Grid.Col span={{ base: 12, lg: 4.5 }} className={SignupStyle.logo}>
+            {/* <Grid.Col span={{ base: 12, lg: 4.5 }} className={SignupStyle.logo}>
                 <Group className={SignupStyle.pattern}>
                     <Image
                         src={patternImg}
@@ -42,7 +42,7 @@ export default function SignUpLayout({
                 <Box className={SignupStyle.header}>
                     Empowering Businesses through Africa&apos;s Best Talent
                 </Box>
-            </Grid.Col>
+            </Grid.Col> */}
         </Grid>
     );
 }

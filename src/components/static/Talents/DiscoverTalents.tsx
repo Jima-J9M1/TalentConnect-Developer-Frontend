@@ -1,4 +1,3 @@
-import { useGetPaginatedDevelopersQuery } from '@/lib/redux/api/developer/developer';
 import { useGetAllSkillsQuery } from '@/lib/redux/api/developer/skill';
 import {
     ActionIcon,
@@ -34,20 +33,20 @@ interface DiscoverTalentsProps {
 
 const DiscoverTalents = ({
     talents,
-    setTalents,
+    // setTalents,
     setLoading,
     loading,
     params,
     setParams
 }: DiscoverTalentsProps) => {
     const [opened, { open, close }] = useDisclosure(false);
-    const [yearsRange, setYearsRange] = React.useState([0, 12]) as any[];
+    const [yearsRange, _] = React.useState([0, 12]) as any[];
 
-    const {
-        data: talentsData,
-        isLoading: talentsLoading,
-        isError: talentsError
-    } = useGetPaginatedDevelopersQuery({ page: 1, limit: 6, ...params });
+    // const {
+    //     data: talentsData,
+    //     isLoading: talentsLoading,
+    //     isError: talentsError
+    // } = useGetPaginatedDevelopersQuery({ page: 1, limit: 6, ...params });
 
     // useEffect(() => {
     //     if (talentsData) {
@@ -59,8 +58,7 @@ const DiscoverTalents = ({
     //     setLoading(talentsLoading);
     // }, [talentsLoading]);
 
-    const { data: skillList, isLoading: isLoadingSkills } =
-        useGetAllSkillsQuery();
+    const { data: skillList } = useGetAllSkillsQuery();
 
     const skills = skillList?.reduce((acc: any, skill: any) => {
         const existingSkill = acc.find((s: any) => s.label === skill.name);

@@ -15,7 +15,7 @@ const TalentCard = ({ talent }: TalentCardProps) => {
     //     console.log("TalentCard -> talent", talent)
     // ) : null;
 
-    const blur = '/e_blur:10000';
+    // const blur = '/e_blur:10000';
     // const blurredUrl = talent.profilePictureUrl
     //     ? talent.profilePictureUrl.replace('/upload', `/upload/${blur}`)
     //     : '';
