@@ -13,6 +13,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import classes from './MainHeader.module.css';
+import { talent_logo_light } from '@/lib/constant/image-constant';
 
 export default function MainHeader() {
     const pathname = usePathname();
@@ -44,9 +45,9 @@ export default function MainHeader() {
                 px={{ base: 15, md: 65, lg: 96 }}
                 className="bg-white flex justify-between items-center"
             >
-                <Link href="/">
+                <Link href="https://talent-connect-frontend.vercel.app/">
                     <Image
-                        src={'images/logos/logo-connect-2.svg'}
+                        src={talent_logo_light}
                         width={132}
                         height={80}
                         alt="logo"
@@ -57,17 +58,9 @@ export default function MainHeader() {
                     <Link href={'/'} className={classes.header_links}>
                         <Text
                             size="base"
-                            style={
-                                currentActive === 'Discover Talent'
-                                    ? {
-                                          color: 'var(--mantine-primary-color-filled)',
-                                          borderBottom:
-                                              '3px solid var(--mantine-color-blue-5)'
-                                      }
-                                    : {
-                                          paddingBottom: '3px'
-                                      }
-                            }
+                            style={{
+                                paddingBottom: '3px'
+                            }}
                             fw={500}
                             className={classes.header_links}
                         >
@@ -81,14 +74,14 @@ export default function MainHeader() {
                             style={
                                 currentActive === 'Discover Talent'
                                     ? {
-                                          color: 'var(--mantine-primary-color-filled)',
-                                          borderBottom:
-                                              '3px solid var(--mantine-color-blue-5)'
+                                          color: '#1C7ED6',
+                                          borderBottom: '3px solid #1C7ED6'
                                       }
                                     : {
                                           paddingBottom: '3px'
                                       }
                             }
+                            c={'#1C7ED6'}
                             fw={500}
                         >
                             Discover Talent
@@ -136,13 +129,19 @@ export default function MainHeader() {
                 </Group>
                 <Group gap="30px" visibleFrom="lg">
                     <Button
-                        style={{ fontWeight: 400 }}
+                        bg={''}
+                        style={{ fontWeight: 400, backgroundColor: '#006BFF' }}
                         component={Link}
                         href={'/hire'}
                     >
                         Hire Top Talent
                     </Button>
-                    <Button variant="outline" component={Link} href={'signin'}>
+                    <Button
+                        variant="outline"
+                        component={Link}
+                        href={'signin'}
+                        c={'#006BFF'}
+                    >
                         Talent Login
                     </Button>
                 </Group>

@@ -233,7 +233,7 @@ const Page = () => {
                             <Link
                                 href={'/signin'}
                                 style={{
-                                    color: '#2195F3',
+                                    color: '#006BFF',
                                     textDecoration: 'underline',
                                     cursor: 'pointer'
                                 }}

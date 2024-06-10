@@ -1,20 +1,26 @@
-import { BackgroundImage, Flex, Group, Stack, Text } from '@mantine/core';
+import { BackgroundImage, Box, Flex, Group, Stack, Text } from '@mantine/core';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn, FaYoutube } from 'react-icons/fa6';
 import style from './footerStyle.module.css';
+import {
+    talent_logo_dark,
+    talent_logo_light
+} from '@/lib/constant/image-constant';
 
 export default function MainFooter() {
     return (
-        <BackgroundImage
-            src="images/footer/footer.png"
+        <Box
+            // src="images/footer/footer.png"
             w={'100%'}
             // bg="/assets/footer.png"
             style={{
                 display: 'flex',
                 justifyContent: 'center',
-                alignContent: 'center'
+                alignContent: 'center',
+                backgroundColor: '#090E34',
+                color: 'white'
             }}
         >
             <Stack justify="center" pt={70} w={'100%'} gap={50}>
@@ -25,7 +31,8 @@ export default function MainFooter() {
                     style={{
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignContent: 'center'
+                        alignContent: 'center',
+                        color: 'white'
                     }}
                     wrap={'wrap'}
                     gap={{ base: 40, md: 0 }}
@@ -33,10 +40,11 @@ export default function MainFooter() {
                     <Stack>
                         <Link href={'/'}>
                             <Image
-                                src={'images/logos/logo-connect-2.svg'}
+                                src={talent_logo_dark}
                                 width={132}
                                 height={100}
                                 alt="logo"
+                                className="text-white"
                             />
                         </Link>
                         <Text w={'250px'}>Made since 2024 in Ethiopia.</Text>
@@ -77,82 +85,52 @@ export default function MainFooter() {
                     </Stack>
                     <Stack
                         style={{
-                            textTransform: 'capitalize'
+                            textTransform: 'capitalize',
+                            color: 'white'
                         }}
                     >
                         <Text fw={500} size="lg">
                             Company
                         </Text>
                         <Link className={style.linkStyle} href={'/'}>
-                            <Text>Home</Text>
+                            <Text style={{ color: 'white' }}>Home</Text>
                         </Link>
-                        {/* <Link className={style.linkStyle} href={'/talent'}>
-                            <Text>Discover Talent</Text>
-                        </Link> */}
                         <Link className={style.linkStyle} href={'/about'}>
-                            <Text>About us</Text>
+                            <Text style={{ color: 'white' }}>About us</Text>
                         </Link>
                     </Stack>
-                    {/*                     
-                    <Stack hidden>
-                        <Text fw={500} size="lg">
-                            Talents
-                        </Text>
-                        <Link
-                            className={style.linkStyle}
-                            href={'/engineering'}
-                            target="_blank"
-                        >
-                            <Text>Web Developers</Text>
-                        </Link>
-                        <Link
-                            className={style.linkStyle}
-                            href={'/engineering'}
-                            target="_blank"
-                        >
-                            <Text>Back-end Developers</Text>
-                        </Link>
-                        <Link
-                            className={style.linkStyle}
-                            href={'/engineering'}
-                            target="_blank"
-                        >
-                            <Text>Mobile Developers</Text>
-                        </Link>
-                    </Stack> */}
                     <Stack>
                         <Text fw={500} size="lg">
-                            Community
+                            Features
                         </Text>
                         <Link
                             className={style.linkStyle}
-                            href={'https://a2sv.org/'}
+                            href={'/'}
                             target="_blank"
                         >
-                            <Text>talentConnect.org</Text>
+                            <Text style={{ color: 'white' }}>
+                                talentConnect.org
+                            </Text>
                         </Link>
                     </Stack>
-                    <Stack
-                        style={{
-                            border: '1px solid #E9F4FE'
-                        }}
-                        justify="end"
-                    >
-                        <Text fw={500} size="lg">
+                    <Stack justify="end">
+                        <Text fw={500} size="lg" style={{ color: 'white' }}>
                             Contact us
                         </Text>
 
-                        <Text w={'200px'} c={'dark'}>
+                        <Text w={'200px'} style={{ color: 'white' }}>
                             +251-912-13-13-13
                         </Text>
                         <Link
                             className={style.linkStyle}
-                            href={'mailto:contact-eskalate@a2sv.org'}
+                            href={'mailto:jimadube100@gmail.com'}
                         >
-                            <Text>contact-talentConnect@gmail.com</Text>
+                            <Text style={{ color: 'white' }}>
+                                contact-talentConnect@gmail.com
+                            </Text>
                         </Link>
 
-                        <Text w={'200px'} c={'dark'}>
+                        <Text w={'200px'} style={{ color: 'white' }}>
                             Addis Ababa Science and Technology University, Addis
                             Ababa
                         </Text>
@@ -168,12 +146,12 @@ export default function MainFooter() {
                         alignContent: 'center'
                     }}
                 >
-                    <Text>
+                    <Text style={{ color: 'white' }}>
                         &#9400; Copyright Talent Connect 2024&#46; All Rights
                         Reserved.
                     </Text>
                 </Stack>
             </Stack>
-        </BackgroundImage>
+        </Box>
     );
 }

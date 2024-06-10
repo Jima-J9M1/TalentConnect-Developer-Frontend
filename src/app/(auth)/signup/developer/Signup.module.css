@@ -27,7 +27,7 @@
 }
 
 .input {
-    border: 1px solid #2195f3;
+    border: 1px solid #006bff;
     background-color: rgba(35, 166, 240, 0.05);
 }
 
@@ -41,7 +41,7 @@
 }
 
 .signupText {
-    color: #2195f3;
+    color: #006bff;
     font-size: 35px;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .applyBtn {
-    background-color: #2195f3;
+    background-color: #006bff;
     color: white;
     border: none;
     padding: 15px 25px;

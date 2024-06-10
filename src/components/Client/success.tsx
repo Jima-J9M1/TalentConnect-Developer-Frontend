@@ -12,7 +12,7 @@ const Success = () => {
                     style={{ display: 'flex' }}
                 >
                     <Image
-                        src="/brian.jpg"
+                        src="images/ibsa.svg"
                         alt="abcd"
                         width={100}
                         height={100}

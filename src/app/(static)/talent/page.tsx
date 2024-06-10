@@ -1,5 +1,6 @@
 'use client';
 
+import Success from '@/components/Client/success';
 import DiscoverTalents from '@/components/static/Talents/DiscoverTalents';
 import FilterTalents from '@/components/static/Talents/FilterTalents';
 import { useGetPaginatedDevelopersQuery } from '@/lib/redux/api/developer/developer';

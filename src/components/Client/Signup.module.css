@@ -6,7 +6,7 @@
 }
 
 .logo {
-    background-color: #2195f3;
+    background-color: #006bff;
     color: white;
     height: 100%;
     padding: 0;
@@ -71,7 +71,7 @@
 }
 
 .input {
-    border: 1px solid #2195f3;
+    border: 1px solid #006bff;
     background-color: rgba(35, 166, 240, 0.05);
 }
 
@@ -111,7 +111,7 @@
     margin: 5px;
 }
 .inputStyle input:focus {
-    border: 1px solid #2195f3 !important;
+    border: 1px solid #006bff !important;
 }
 
 .countryCode {
@@ -138,7 +138,7 @@
 }
 
 .applyBtn {
-    background-color: #2195f3;
+    background-color: #006bff;
     color: white;
     border: none;
     padding: 10px 25px;
@@ -149,7 +149,7 @@
 }
 
 .applyBtnSkip {
-    color: #2195f3;
+    color: #006bff;
     border: 2;
     padding: 10px 20px;
     border-radius: 5px;

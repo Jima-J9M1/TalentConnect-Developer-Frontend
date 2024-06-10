@@ -87,6 +87,7 @@ const Page = () => {
                 alt="logo connect"
                 className="mx-20"
             />
+
             {isVerified != null &&
                 (isVerified == 'true' ? (
                     <Alert
@@ -145,7 +146,7 @@ const Page = () => {
                 <FaGoogle
                     style={{
                         marginRight: '10px',
-                        color: '#2195F3'
+                        color: '#006BFF'
                     }}
                 />
                 Sign in with Google
@@ -161,7 +162,7 @@ const Page = () => {
             )}
             <Button
                 fullWidth
-                style={{ backgroundColor: '#2195F3' }}
+                style={{ backgroundColor: '#006BFF' }}
                 type="submit"
                 loading={isLoading}
             >
@@ -180,7 +181,7 @@ const Page = () => {
                     <Text>Don&apos;t have an account?</Text>
                     <Link
                         style={{
-                            color: '#2195F3',
+                            color: '#006BFF',
                             textDecoration: 'underline',
                             cursor: 'pointer',
                             textTransform: 'capitalize'
@@ -197,7 +198,7 @@ const Page = () => {
                     fw={400}
                     size="sm"
                     style={{
-                        color: '#2195F3',
+                        color: '#006BFF',
                         textDecoration: 'underline',
                         cursor: 'pointer'
                     }}
