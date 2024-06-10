@@ -1,5 +1,6 @@
 'use client';
 
+import Success from '@/components/Client/success';
 import DiscoverTalents from '@/components/static/Talents/DiscoverTalents';
 import FilterTalents from '@/components/static/Talents/FilterTalents';
 import { useGetPaginatedDevelopersQuery } from '@/lib/redux/api/developer/developer';
@@ -16,7 +17,6 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
-import HeroSearch from './search-hero';
 
 const Page = () => {
     const [talents, setTalents] = React.useState(null) as any;
@@ -70,7 +70,6 @@ const Page = () => {
 
     return (
         <Box bg="#F4F4F5" m={0}>
-            <HeroSearch />
             <Flex
                 justify="center"
                 maw={'2000px'}

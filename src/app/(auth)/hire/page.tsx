@@ -108,13 +108,6 @@ const Page = () => {
     return (
         <Box className={SignupStyle.signupForm}>
             <>
-                <Image
-                    src={'images/logos/logo-connect-2.svg'}
-                    width={200}
-                    height={200}
-                    alt="logo connect"
-                    className="mx-20"
-                />
                 <Stepper
                     styles={{
                         steps: {
@@ -136,13 +129,22 @@ const Page = () => {
                         }}
                     >
                         {!showCalendly && (
-                            <MainInfo
-                                form={form}
-                                nextStep={submit}
-                                isLoading={isLoading}
-                                error={error}
-                                started={started}
-                            />
+                            <>
+                                <Image
+                                    src={'images/logos/logo-connect-2.svg'}
+                                    width={200}
+                                    height={200}
+                                    alt="logo connect"
+                                    className="mx-20"
+                                />
+                                <MainInfo
+                                    form={form}
+                                    nextStep={submit}
+                                    isLoading={isLoading}
+                                    error={error}
+                                    started={started}
+                                />
+                            </>
                         )}
                         <Calendly
                             show={showCalendly}

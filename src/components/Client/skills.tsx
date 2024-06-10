@@ -192,7 +192,7 @@ const Skills = ({ form, skipStep, nextStep }: any) => {
                                 key={data}
                                 rightSection={
                                     <CloseButton
-                                        style={{ color: '#2195f3' }}
+                                        style={{ color: '#006BFF' }}
                                         onClick={() => {
                                             form.setFieldValue(
                                                 'technologies',

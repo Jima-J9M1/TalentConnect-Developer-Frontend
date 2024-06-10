@@ -7,6 +7,7 @@ import SignupStyle from '@/components/Client/Signup.module.css';
 import mainLogo from '@/../public/images/logos/main_logo.svg';
 import patternImg from '@/../public/images/auth/pattern.svg';
 import pattern2Img from '@/../public/images/auth/pattern2.svg';
+import { talent_logo_dark } from '@/lib/constant/image-constant';
 
 export default function SignUpLayout({
     children
@@ -20,6 +21,15 @@ export default function SignUpLayout({
                 className={SignupStyle.signup}
             >
                 {children}
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, lg: 4.5 }} className={SignupStyle.logo}>
+                <Image
+                    src={talent_logo_dark}
+                    alt="talent connect logo"
+                    className={SignupStyle.mainLogoImg}
+                    width={500}
+                    height={500}
+                />
             </Grid.Col>
         </Grid>
     );

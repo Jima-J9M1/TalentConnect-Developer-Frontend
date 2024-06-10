@@ -195,7 +195,7 @@ const UploadResumeStep = () => {
 
                     <Button
                         variant="filled"
-                        color="#2195F3"
+                        color="#006BFF"
                         onClick={uploadResume}
                         loading={isUpdating}
                     >

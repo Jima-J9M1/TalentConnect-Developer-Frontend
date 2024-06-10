@@ -141,7 +141,7 @@ const Page = () => {
 
                     <Button
                         miw={'40%'}
-                        style={{ backgroundColor: '#2195F3', alignSelf: 'end' }}
+                        style={{ backgroundColor: '#006BFF', alignSelf: 'end' }}
                         type="submit"
                         loading={isChangingPassword}
                     >
