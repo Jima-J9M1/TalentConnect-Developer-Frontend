@@ -8,6 +8,7 @@ import mainLogo from '@/../public/images/logos/main_logo.svg';
 import patternImg from '@/../public/images/auth/pattern.svg';
 import pattern2Img from '@/../public/images/auth/pattern2.svg';
 import { talent_logo_dark } from '@/lib/constant/image-constant';
+import Success from '@/components/Client/success';
 
 export default function SignUpLayout({
     children
@@ -22,27 +23,15 @@ export default function SignUpLayout({
             >
                 {children}
             </Grid.Col>
+
             <Grid.Col span={{ base: 12, lg: 4.5 }} className={SignupStyle.logo}>
-                <Group className={SignupStyle.pattern}>
-                    <Image
-                        src={patternImg}
-                        alt="Talent Connect Logo"
-                        className={SignupStyle.patternImg}
-                    />
-                </Group>
-                <Image
-                    src={pattern2Img}
-                    alt="Talent Connect Logo"
-                    className={SignupStyle.pattern2Img}
-                />
                 <Image
                     src={talent_logo_dark}
                     alt="Talent Connect Logo"
                     className={SignupStyle.mainLogoImg}
+                    width={500}
+                    height={500}
                 />
-                <Box className={SignupStyle.header}>
-                    Empowering Businesses through Africa&apos;s Best Talent
-                </Box>
             </Grid.Col>
         </Grid>
     );

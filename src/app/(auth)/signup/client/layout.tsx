@@ -20,10 +20,16 @@ export default function SignUpLayout({
     return (
         <Grid className={SignupStyle.page} bg={'white'}>
             <Grid.Col
+                span={{ base: 12, lg: 7.5 }}
+                className={SignupStyle.signup}
+            >
+                {children}
+            </Grid.Col>
+            <Grid.Col
                 span={{ base: 12, lg: 4.5 }}
                 className={`${SignupStyle.logo}`}
             >
-                <Group className={SignupStyle.pattern}>
+                {/* <Group className={SignupStyle.pattern}>
                     <Image
                         src={patternImg}
                         alt="talent connect logo"
@@ -38,24 +44,15 @@ export default function SignUpLayout({
                     className={SignupStyle.pattern2Img}
                     width={500}
                     height={500}
-                />
+                /> */}
                 <Image
                     className="justify-center"
                     src={talent_logo_dark}
-                    alt="Eskalate Logo"
+                    alt="talent connect logo"
                     width={500}
                     height={500}
                     // className={SignupStyle.mainLogoImg}
                 />
-                <Box className={SignupStyle.header}>
-                    Empowering Businesses through Africa&apos;s Best Talent
-                </Box>
-            </Grid.Col>
-            <Grid.Col
-                span={{ base: 12, lg: 7.5 }}
-                className={SignupStyle.signup}
-            >
-                {children}
             </Grid.Col>
         </Grid>
     );

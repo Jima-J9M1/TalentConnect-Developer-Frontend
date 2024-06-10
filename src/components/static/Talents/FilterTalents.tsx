@@ -302,7 +302,7 @@ const FilterTalents = ({
                 </Flex> */}
 
                 {/* <Flex
-        direction="column"
+        direction="column"  
         wrap="wrap"
         gap="xs"
       >

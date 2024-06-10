@@ -309,6 +309,7 @@ const DiscoverTalents = ({
                         fs={'sm'}
                         size={'md'}
                         type="submit"
+                        bg={'#006BFF'}
                     >
                         Search
                     </Button>

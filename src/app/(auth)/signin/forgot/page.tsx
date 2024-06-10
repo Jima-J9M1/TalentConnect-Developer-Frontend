@@ -75,7 +75,7 @@ const Page: React.FC<{}> = () => {
 
                     <Button
                         fullWidth
-                        style={{ backgroundColor: '#2195F3' }}
+                        style={{ backgroundColor: '#006BFF' }}
                         type="submit"
                         loading={isLoading}
                     >
