@@ -287,7 +287,7 @@ const DiscoverTalents = ({
                 fw={'bold'}
                 c={'#71717A'}
             >
-                Discover Talent
+                Find and Hire Talent
             </Text>
             <form onSubmit={(event) => handleSearch(event)}>
                 <Fieldset
@@ -297,7 +297,7 @@ const DiscoverTalents = ({
                     pl={{ base: 0, md: 16 }}
                 >
                     <TextInput
-                        placeholder="Search by tech stack"
+                        placeholder="Search...."
                         w={'70%'}
                         size={'md'}
                         {...form.getInputProps('search')}

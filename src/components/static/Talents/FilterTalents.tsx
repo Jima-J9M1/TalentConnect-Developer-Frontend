@@ -124,101 +124,108 @@ const FilterTalents = ({
     };
 
     return (
-        <form onSubmit={(event) => handleSubmit(event)}>
-            <Card
-                display={{ base: 'none', lg: 'flex' }}
-                radius="lg"
-                px={32}
-                pt={32}
-                pb={64}
-                h={'fit-content'}
-                w={'400px'}
-                style={{
-                    flexDirection: 'column',
-                    gap: '28px'
-                }}
-                shadow="md"
-                pos={{ base: 'sticky' }}
+        <div className="flex flex-col ">
+            <Text
+                style={{ fontSize: '30px' }}
+                pl={{ base: 0, md: 16 }}
+                fw={'bold'}
+                c={'#71717A'}
+                pb={12}
             >
-                <Flex
-                    justify="space-between"
-                    align="center"
-                    direction="row"
-                    wrap="wrap"
-                    gap="md"
+                Filter Talents
+            </Text>
+            <form onSubmit={(event) => handleSubmit(event)}>
+                <Card
+                    display={{ base: 'none', lg: 'flex' }}
+                    radius="lg"
+                    px={32}
+                    pt={32}
+                    pb={64}
+                    h={'fit-content'}
+                    w={'400px'}
+                    style={{
+                        flexDirection: 'column',
+                        gap: '28px'
+                    }}
+                    shadow="md"
+                    pos={{ base: 'sticky' }}
                 >
-                    <Text size="lg" c={'#71717A'}>
-                        Filter Talents
-                    </Text>
-                    <Button
-                        onClick={() => {
-                            form.reset();
-                            setYearsRange([0, 6]);
-                            setParams({ page: 1, limit: 6 });
-                        }}
-                        variant="outline"
-                        color="red"
+                    <Flex
+                        justify="space-between"
+                        align="center"
+                        direction="row"
+                        wrap="wrap"
+                        gap="md"
                     >
-                        Clear
-                    </Button>
-                </Flex>
-                <Flex direction="column" wrap="wrap" gap="xs">
-                    <Box w={'100%'} m={0}>
-                        <Text size="xl" c={'#71717A'}>
-                            Skills
-                        </Text>
-                    </Box>
-                    <MultiSelect
-                        searchable
-                        placeholder="Pick skills"
-                        data={
-                            skills
-                                ? skills.map((skill: any) => skill.label)
-                                : []
-                        }
-                        clearable
-                        {...form.getInputProps('skills', { type: 'input' })}
-                    />
-                </Flex>
-                <Flex direction="column" wrap="wrap" gap="sm">
-                    <Box w={'100%'} m={0}>
-                        <Text size="xl" c={'#71717A'}>
-                            Engineering
-                        </Text>
-                        <hr style={{ color: '#71717A', width: '100%' }} />
-                    </Box>
-                    <Flex direction="column" gap="0px" w={'400px'}>
-                        <Card className={style.checkBox}>
-                            <Checkbox
-                                c={'#71717A'}
-                                size="md"
-                                label="Mobile Developer"
-                                {...form.getInputProps('mobileApp', {
-                                    type: 'checkbox'
-                                })}
-                            />
-                        </Card>
-                        <Card className={style.checkBox}>
-                            <Checkbox
-                                c={'#71717A'}
-                                size="md"
-                                label="Frontend Developer"
-                                {...form.getInputProps('webApp', {
-                                    type: 'checkbox'
-                                })}
-                            />
-                        </Card>
-                        <Card className={style.checkBox}>
-                            <Checkbox
-                                c={'#71717A'}
-                                size="md"
-                                label="Backend Developer"
-                                {...form.getInputProps('fullstackApp', {
-                                    type: 'checkbox'
-                                })}
-                            />
-                        </Card>
-                        {/* <Card className={style.checkBox}>
+                        <Button
+                            onClick={() => {
+                                form.reset();
+                                setYearsRange([0, 6]);
+                                setParams({ page: 1, limit: 6 });
+                            }}
+                            variant="outline"
+                            color="red"
+                        >
+                            Clear
+                        </Button>
+                    </Flex>
+                    <Flex direction="column" wrap="wrap" gap="xs">
+                        <Box w={'100%'} m={0}>
+                            <Text size="xl" c={'#71717A'}>
+                                Skills
+                            </Text>
+                        </Box>
+                        <MultiSelect
+                            searchable
+                            placeholder="Pick skills"
+                            data={
+                                skills
+                                    ? skills.map((skill: any) => skill.label)
+                                    : []
+                            }
+                            clearable
+                            {...form.getInputProps('skills', { type: 'input' })}
+                        />
+                    </Flex>
+                    <Flex direction="column" wrap="wrap" gap="sm">
+                        <Box w={'100%'} m={0}>
+                            <Text size="xl" c={'#71717A'}>
+                                Engineering
+                            </Text>
+                            <hr style={{ color: '#71717A', width: '100%' }} />
+                        </Box>
+                        <Flex direction="column" gap="0px" w={'400px'}>
+                            <Card className={style.checkBox}>
+                                <Checkbox
+                                    c={'#71717A'}
+                                    size="md"
+                                    label="Mobile Developer"
+                                    {...form.getInputProps('mobileApp', {
+                                        type: 'checkbox'
+                                    })}
+                                />
+                            </Card>
+                            <Card className={style.checkBox}>
+                                <Checkbox
+                                    c={'#71717A'}
+                                    size="md"
+                                    label="Frontend Developer"
+                                    {...form.getInputProps('webApp', {
+                                        type: 'checkbox'
+                                    })}
+                                />
+                            </Card>
+                            <Card className={style.checkBox}>
+                                <Checkbox
+                                    c={'#71717A'}
+                                    size="md"
+                                    label="Backend Developer"
+                                    {...form.getInputProps('fullstackApp', {
+                                        type: 'checkbox'
+                                    })}
+                                />
+                            </Card>
+                            {/* <Card className={style.checkBox}>
                             <Checkbox
                                 c={'#71717A'}
                                 size="md"
@@ -238,9 +245,9 @@ const FilterTalents = ({
                                 })}
                             />
                         </Card> */}
+                        </Flex>
                     </Flex>
-                </Flex>
-                {/* <Flex direction="column" wrap="wrap" gap="sm">
+                    {/* <Flex direction="column" wrap="wrap" gap="sm">
                     <Box w={'100%'} m={0}>
                         <Text size="xl" c={'#71717A'}>
                             Availability
@@ -275,7 +282,7 @@ const FilterTalents = ({
                         </Card>
                     </Flex>
                 </Flex> */}
-                {/* <Flex direction="column" wrap="wrap" gap="sm">
+                    {/* <Flex direction="column" wrap="wrap" gap="sm">
                     <Box w={'100%'} m={0}>
                         <Text size="xl">Years of Experience</Text>
                         <hr style={{ color: 'black', width: '100%' }} />
@@ -291,7 +298,7 @@ const FilterTalents = ({
                     />
                 </Flex> */}
 
-                {/* <Flex direction="column" wrap="wrap" gap="xs">
+                    {/* <Flex direction="column" wrap="wrap" gap="xs">
                     <Text size="md">Country</Text>
                     <MultiSelect
                         placeholder="Pick country"
@@ -301,7 +308,7 @@ const FilterTalents = ({
                     />
                 </Flex> */}
 
-                {/* <Flex
+                    {/* <Flex
         direction="column"  
         wrap="wrap"
         gap="xs"
@@ -318,13 +325,14 @@ const FilterTalents = ({
         />
       </Flex> */}
 
-                {/* <Center>
+                    {/* <Center>
                     <Button type="submit" variant="filled" w={'40%'}>
                         Apply Filter
                     </Button>
                 </Center> */}
-            </Card>
-        </form>
+                </Card>
+            </form>
+        </div>
     );
 };
 

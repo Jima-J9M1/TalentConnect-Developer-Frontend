@@ -107,14 +107,14 @@ const TalentCard = ({ talent }: TalentCardProps) => {
                             </Flex>
                         </Flex>
                     </Flex>
-                    <Flex align={'center'} direction="row" wrap="wrap" gap="xs">
+                    {/* <Flex align={'center'} direction="row" wrap="wrap" gap="xs">
                         {talent?.user?.country === 'Ghana' ? (
                             <GHFlag size={'25px'} />
                         ) : (
                             <ETFlag size={'25px'} />
                         )}
                         <Text c={'#71717A'}>{talent?.user?.country}</Text>
-                    </Flex>
+                    </Flex> */}
                     {/* <Text size="md" c={'#71717A'} fw={'400'}>
                         {talent.profileOverview &&
                             (talent.profileOverview.length > 170 ? (
