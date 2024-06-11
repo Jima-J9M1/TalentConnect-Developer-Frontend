@@ -79,13 +79,6 @@ const Page = () => {
                 py={40}
                 px={20}
             >
-                <FilterTalents
-                    talents={talents}
-                    setTalents={setTalents}
-                    setLoading={setLoading}
-                    params={params}
-                    setParams={setParams}
-                />
                 <Flex
                     w={{ base: '100%', md: '60%' }}
                     direction="column"
@@ -197,6 +190,13 @@ const Page = () => {
                         />
                     </Box> */}
                 </Flex>
+                <FilterTalents
+                    talents={talents}
+                    setTalents={setTalents}
+                    setLoading={setLoading}
+                    params={params}
+                    setParams={setParams}
+                />
             </Flex>
         </Box>
     );

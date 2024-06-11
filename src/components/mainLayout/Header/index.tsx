@@ -26,6 +26,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import DropDownMenu from './DropDownMenu';
+import { talent_logo_light } from '@/lib/constant/image-constant';
 
 export default function Header() {
     const [opened, { open, close }] = useDisclosure(false);
@@ -51,9 +52,9 @@ export default function Header() {
         >
             <Link href="/">
                 <Image
-                    src={'/images/logos/Logo.svg'}
+                    src={talent_logo_light}
                     width={132}
-                    height={50}
+                    height={90}
                     alt="logo"
                 />
             </Link>
